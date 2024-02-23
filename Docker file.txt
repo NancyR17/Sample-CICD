@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8080
+ADD target/devops-naina-image.jar devops-naina-image.jar
+ENTRYPOINT ["java","-jar","/devops-naina-image.jar"]
